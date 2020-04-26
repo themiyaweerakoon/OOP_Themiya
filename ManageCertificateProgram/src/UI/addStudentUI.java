@@ -1,5 +1,7 @@
-package ManageCertificateProgram;
+package UI;
 
+import Models.Student;
+import Service.TrueEducationService;
 import java.util.Date;
 
 
@@ -295,6 +297,15 @@ public class addStudentUI extends javax.swing.JFrame {
 
     private void btnAddActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAddActionPerformed
         
+        Student std = new Student();
+        
+        String stuID = txtStudentID.getText();
+        std.setStudentNam(stuID);
+        String stuName = txtStudentName.getText();
+        std.setStudentId(stuID);
+        
+        TrueEducationService ser = new TrueEducationService();
+        ser.addStudent(std);
 
         
     }//GEN-LAST:event_btnAddActionPerformed
