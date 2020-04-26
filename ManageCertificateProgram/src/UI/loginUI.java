@@ -1,4 +1,4 @@
-package ManageCertificateProgram;
+package UI;
 
 import javax.swing.JOptionPane;
 
