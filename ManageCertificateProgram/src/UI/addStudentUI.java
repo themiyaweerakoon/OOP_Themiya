@@ -2,7 +2,7 @@ package UI;
 
 import Models.Student;
 import Service.TrueEducationService;
-import java.util.Date;
+import java.sql.Date;
 
 
 public class addStudentUI extends javax.swing.JFrame {
@@ -300,12 +300,31 @@ public class addStudentUI extends javax.swing.JFrame {
         Student std = new Student();
         
         String stuID = txtStudentID.getText();
-        std.setStudentNam(stuID);
-        String stuName = txtStudentName.getText();
         std.setStudentId(stuID);
+        
+        String stuName = txtStudentName.getText();
+        std.setStudentName(stuName);
+        
+        String stuAddress = txtStudentAddress.getText();
+        std.setStudentAddress(stuAddress);
+        
+        String stuEmail = txtStudentEmail.getText();
+        std.setStudentEmail(stuEmail);
+        
+        String stuContact = txtStudentContact.getText();
+        std.setStudentContact(stuContact);
+        
+        Object stuGender = ComboBoxStudentGender.getSelectedItem();
+        std.setStudentGender(stuGender);
+        
+        Date stuDOB = (Date) DateChooserStudentDOB.getDate();
+        std.setStudentDOB(stuDOB);
+        
+        
         
         TrueEducationService ser = new TrueEducationService();
         ser.addStudent(std);
+        
 
         
     }//GEN-LAST:event_btnAddActionPerformed
