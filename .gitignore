@@ -1,1 +1,5 @@
 #ignore files
+ManageCertificateProgram/build
+ManageCertificateProgram/nbproject
+ManageCertificateProgram/build.xml
+ManageCertificateProgram/manifest.mf
