@@ -1,6 +1,9 @@
 
 package Models;
 
+import java.sql.Date;
+
+
 
 public class Student {
     
@@ -9,9 +12,48 @@ public class Student {
     private String StudentAddress;
     private String StudentContact;
     private String StudentEmail;
-    Private Date StudentDOB;
+    private Date StudentDOB;
     private Object StudentGender;
-    
+
+    public String getStudentAddress() {
+        return StudentAddress;
+    }
+
+    public void setStudentAddress(String StudentAddress) {
+        this.StudentAddress = StudentAddress;
+    }
+
+    public String getStudentContact() {
+        return StudentContact;
+    }
+
+    public void setStudentContact(String StudentContact) {
+        this.StudentContact = StudentContact;
+    }
+
+    public String getStudentEmail() {
+        return StudentEmail;
+    }
+
+    public void setStudentEmail(String StudentEmail) {
+        this.StudentEmail = StudentEmail;
+    }
+
+    public Date getStudentDOB() {
+        return StudentDOB;
+    }
+
+    public void setStudentDOB(Date StudentDOB) {
+        this.StudentDOB = StudentDOB;
+    }
+
+    public Object getStudentGender() {
+        return StudentGender;
+    }
+
+    public void setStudentGender(Object StudentGender) {
+        this.StudentGender = StudentGender;
+    }
 
     public String getStudentId() {
         return StudentId;
