@@ -1,4 +1,4 @@
-package ManageCertificateProgram;
+package UI;
 
 
 public class mainMenuUI extends javax.swing.JFrame {

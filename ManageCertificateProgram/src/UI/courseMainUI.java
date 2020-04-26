@@ -1,4 +1,4 @@
-package ManageCertificateProgram;
+package UI;
 
 
 public class courseMainUI extends javax.swing.JFrame {
