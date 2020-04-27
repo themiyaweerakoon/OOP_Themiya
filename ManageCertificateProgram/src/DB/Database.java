@@ -2,10 +2,11 @@
 package DB;
 
 import Models.Student;
-import java.beans.Statement;
+
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
+import java.sql.Statement;
 
 
 
@@ -15,29 +16,29 @@ public class Database {
     
 public void addStudent(Student student)
 {
-    student.getStudentName();
     student.getStudentId();
-    student.getStudentContact();
-    student.getStudentAddress();
-    student.getStudentEmail();
-    student.getStudentGender();
+    student.getStudentName();
     student.getStudentDOB();
+    student.getStudentGender();
+    student.getStudentEmail();
+    student.getStudentAddress();
+    student.getStudentContact();
     
     Connection conn = null;
-      Statement stmt = null;
+    Statement stmt = null;
       try {
          try {
             Class.forName("com.mysql.jdbc.Driver");
          } catch (Exception e) {
             System.out.println(e);
       }
-      conn = (Connection) DriverManager.getConnection("jdbc:mysql://localhost:3306/certificate_program_students", "root", "");
+      conn = (Connection) DriverManager.getConnection("jdbc:mysql://localhost:3306/true_education_academy", "root", "");
       
       System.out.println("Connection is created successfully:");
       stmt = (Statement) conn.createStatement();
       
-      query = "INSERT INTO `certificate_program_students`(`studentID`, `studentName`, `studentDOB`, `studentGender`, `studentEmail`, `studentAddress`, `studentContact`) VALUES (getStudentId(),getStudentName(),getStudentDOB(),getStudentGender(),getStudentEmail(),getStudentAddress(),getStudentContact())";
-      stmt.execute();
+      query = "INSERT INTO `certificate_program_students`(`studentID`, `studentName`, `studentDOB`,`studentGender`, `studentEmail`, `studentAddress`, `studentContact`) VALUES (StudentId,StudentName,StudentDOB,StudentGender,StudentEmail,StudentAddress,StudentContact)";
+      stmt.execute(query);
       
       System.out.println("Record is inserted in the table successfully..................");
       
