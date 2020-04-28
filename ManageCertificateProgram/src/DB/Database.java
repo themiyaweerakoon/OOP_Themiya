@@ -37,18 +37,20 @@ public void addStudent(Student student)
       conn = (Connection) DriverManager.getConnection("jdbc:mysql://localhost:3306/true_education_academy", "root", "");
       
       System.out.println("Connection is created successfully:");
-      PreparedStatement stmt = conn.prepareStatement(query);
       
       query = "INSERT INTO `certificate_program_students`(`studentID`, `studentName`, `studentDOB`,`studentGender`, `studentEmail`, `studentAddress`, `studentContact`) VALUES (?,?,?,?,?,?,?)";
+      
+      PreparedStatement stmt = conn.prepareStatement(query);
+      
       stmt.setString(1, stuId);
       stmt.setString(2, stuName);
-      stmt.setDate(3, (java.sql.Date) stuDOB);
+      stmt.setDate(3, new java.sql.Date(stuDOB.getTime()));
       stmt.setObject(4, stuGender);
       stmt.setString(5, stuEmail);
       stmt.setString(6, stuAddress);
       stmt.setString(7, stuContact);
       
-      stmt.executeUpdate(query);
+      stmt.execute();
       
       System.out.println("Record is inserted in the table successfully..................");
       
