@@ -2,7 +2,7 @@ package UI;
 
 import Models.Student;
 import Service.TrueEducationService;
-import java.sql.Date;
+import java.util.Date;
 
 
 public class addStudentUI extends javax.swing.JFrame {
@@ -317,7 +317,7 @@ public class addStudentUI extends javax.swing.JFrame {
         Object stuGender = ComboBoxStudentGender.getSelectedItem();
         std.setStudentGender(stuGender);
         
-        Date stuDOB = (Date) DateChooserStudentDOB.getDate();
+        Date stuDOB = DateChooserStudentDOB.getDate();
         std.setStudentDOB(stuDOB);
         
         
