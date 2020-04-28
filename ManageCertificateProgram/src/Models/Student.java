@@ -13,7 +13,7 @@ public class Student {
     private String StudentContact;
     private String StudentEmail;
     private Date StudentDOB;
-    private Object StudentGender;
+    private String StudentGender;
 
     public String getStudentAddress() {
         return StudentAddress;
@@ -51,7 +51,7 @@ public class Student {
         return StudentGender;
     }
 
-    public void setStudentGender(Object StudentGender) {
+    public void setStudentGender(String StudentGender) {
         this.StudentGender = StudentGender;
     }
 
