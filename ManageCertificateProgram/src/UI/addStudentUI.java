@@ -147,6 +147,7 @@ public class addStudentUI extends javax.swing.JFrame {
 
         DateChooserStudentDOB.setBackground(new java.awt.Color(255, 255, 255));
         DateChooserStudentDOB.setForeground(new java.awt.Color(0, 0, 0));
+        DateChooserStudentDOB.setDateFormatString("dd-mm- yyyy"); // NOI18N
 
         txtStudentAddress.setBackground(new java.awt.Color(255, 255, 255));
         txtStudentAddress.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
