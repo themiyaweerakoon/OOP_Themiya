@@ -81,16 +81,31 @@ public class studentMainUI extends javax.swing.JFrame {
         btnAdd.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
         btnAdd.setForeground(new java.awt.Color(255, 255, 255));
         btnAdd.setText("Add Students");
+        btnAdd.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnAddActionPerformed(evt);
+            }
+        });
 
         btnView.setBackground(new java.awt.Color(102, 0, 0));
         btnView.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
         btnView.setForeground(new java.awt.Color(255, 255, 255));
         btnView.setText("View Students");
+        btnView.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnViewActionPerformed(evt);
+            }
+        });
 
         btnDelete.setBackground(new java.awt.Color(102, 0, 0));
         btnDelete.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
         btnDelete.setForeground(new java.awt.Color(255, 255, 255));
         btnDelete.setText("Delete Students");
+        btnDelete.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnDeleteActionPerformed(evt);
+            }
+        });
 
         btnUpdate.setBackground(new java.awt.Color(102, 0, 0));
         btnUpdate.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
@@ -147,6 +162,27 @@ public class studentMainUI extends javax.swing.JFrame {
         dispose();
         new mainMenuUI().setVisible(true);
     }//GEN-LAST:event_btnbackActionPerformed
+
+    private void btnAddActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAddActionPerformed
+        
+        dispose();
+        new addStudentUI().setVisible(true);
+        
+    }//GEN-LAST:event_btnAddActionPerformed
+
+    private void btnDeleteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDeleteActionPerformed
+        
+        dispose();
+        new deleteStudentUI().setVisible(true);
+        
+    }//GEN-LAST:event_btnDeleteActionPerformed
+
+    private void btnViewActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnViewActionPerformed
+        
+        dispose();
+        new viewStudentUI().setVisible(true);
+        
+    }//GEN-LAST:event_btnViewActionPerformed
 
 
     public static void main(String args[]) {

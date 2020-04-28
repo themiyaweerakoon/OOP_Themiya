@@ -315,12 +315,11 @@ public class addStudentUI extends javax.swing.JFrame {
         String stuContact = txtStudentContact.getText();
         std.setStudentContact(stuContact);
         
-        Object stuGender = ComboBoxStudentGender.getSelectedItem();
-        std.setStudentGender(stuGender);
+        Object stuGender = (String) ComboBoxStudentGender.getSelectedItem();
+        std.setStudentGender((String) stuGender);
         
         Date stuDOB = DateChooserStudentDOB.getDate();
         std.setStudentDOB(stuDOB);
-        
         
         
         TrueEducationService ser = new TrueEducationService();
