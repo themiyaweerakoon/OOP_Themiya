@@ -7,6 +7,7 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.sql.Statement;
+import java.util.Date;
 
 
 
@@ -16,13 +17,13 @@ public class Database {
     
 public void addStudent(Student student)
 {
-    student.getStudentId();
-    student.getStudentName();
-    student.getStudentDOB();
-    student.getStudentGender();
-    student.getStudentEmail();
-    student.getStudentAddress();
-    student.getStudentContact();
+    String stuId = student.getStudentId();
+    String stuName = student.getStudentName();
+    Date stuDOB = student.getStudentDOB();
+    Object stuGender = student.getStudentGender();
+    String stuEmail = student.getStudentEmail();
+    String stuAddress = student.getStudentAddress();
+    String stuContact = student.getStudentContact();
     
     Connection conn = null;
     Statement stmt = null;
@@ -37,7 +38,8 @@ public void addStudent(Student student)
       System.out.println("Connection is created successfully:");
       stmt = (Statement) conn.createStatement();
       
-      query = "INSERT INTO `certificate_program_students`(`studentID`, `studentName`, `studentDOB`,`studentGender`, `studentEmail`, `studentAddress`, `studentContact`) VALUES (StudentId,StudentName,StudentDOB,StudentGender,StudentEmail,StudentAddress,StudentContact)";
+      query = "INSERT INTO `certificate_program_students`(`studentID`, `studentName`, `studentDOB`,`studentGender`, `studentEmail`, `studentAddress`, `studentContact`) VALUES (?,?,?,?,?,?,?)";
+      
       stmt.execute(query);
       
       System.out.println("Record is inserted in the table successfully..................");
@@ -64,7 +66,7 @@ public void addStudent(Student student)
             se.printStackTrace();
          }  
       }
-      System.out.println("Please check it in the MySQL Table..........");
+      System.out.println("Check it in the MySQL Table..........");
    }
     
 }
