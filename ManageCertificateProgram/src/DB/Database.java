@@ -20,7 +20,7 @@ public void addStudent(Student student)
 {
     String stuId = student.getStudentId();
     String stuName = student.getStudentName();
-    Date stuDOB = student.getStudentDOB();
+    Date stuDOB = (Date) student.getStudentDOB();
     Object stuGender = student.getStudentGender();
     String stuEmail = student.getStudentEmail();
     String stuAddress = student.getStudentAddress();
