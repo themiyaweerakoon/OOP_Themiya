@@ -5,8 +5,8 @@ import Models.Student;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.sql.PreparedStatement;
 import java.sql.SQLException;
-import java.sql.Statement;
 import java.util.Date;
 
 
@@ -14,6 +14,7 @@ import java.util.Date;
 public class Database {
 
     private String query;
+    private Object stmt;
     
 public void addStudent(Student student)
 {
@@ -26,7 +27,7 @@ public void addStudent(Student student)
     String stuContact = student.getStudentContact();
     
     Connection conn = null;
-    Statement stmt = null;
+
       try {
          try {
             Class.forName("com.mysql.jdbc.Driver");
@@ -36,11 +37,18 @@ public void addStudent(Student student)
       conn = (Connection) DriverManager.getConnection("jdbc:mysql://localhost:3306/true_education_academy", "root", "");
       
       System.out.println("Connection is created successfully:");
-      stmt = (Statement) conn.createStatement();
+      PreparedStatement stmt = conn.prepareStatement(query);
       
       query = "INSERT INTO `certificate_program_students`(`studentID`, `studentName`, `studentDOB`,`studentGender`, `studentEmail`, `studentAddress`, `studentContact`) VALUES (?,?,?,?,?,?,?)";
+      stmt.setString(1, stuId);
+      stmt.setString(2, stuName);
+      stmt.setDate(3, (java.sql.Date) stuDOB);
+      stmt.setObject(4, stuGender);
+      stmt.setString(5, stuEmail);
+      stmt.setString(6, stuAddress);
+      stmt.setString(7, stuContact);
       
-      stmt.execute(query);
+      stmt.executeUpdate(query);
       
       System.out.println("Record is inserted in the table successfully..................");
       
