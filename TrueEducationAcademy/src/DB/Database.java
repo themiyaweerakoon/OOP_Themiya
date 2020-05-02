@@ -161,8 +161,6 @@ public void viewStudent(Student student)
       {
 	System.out.println("Student ID: " +  resultSet.getString("studentID") + ", Student Name: " +  resultSet.getString("studentName") + ", Date of Birth: " +  resultSet.getDate("studentDOB") + ", Gender: " +  resultSet.getString("studentGender") + ", Email: " +  resultSet.getString("studentEmail") + ", Address: " +  resultSet.getString("studentAddress") + ", Contact: " +  resultSet.getString("studentContact") );
         
-        jTextArea.setText(resultSet.getString("studentID") + " \n " + resultSet.getString("studentName")  + " \n " + resultSet.getDate("studentDOB") + " \n " + resultSet.getString("studentGender") + " \n " + resultSet.getString("studentEmail") + " \n " + resultSet.getString("studentAddress") + " \n " + resultSet.getString("studentContact"));
-        
       }
       
       System.out.println("Record is View successfully..................");
