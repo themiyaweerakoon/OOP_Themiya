@@ -1,7 +1,7 @@
 #ignore files
-ManageCertificateProgram/build
-ManageCertificateProgram/nbproject
-ManageCertificateProgram/build.xml
-ManageCertificateProgram/manifest.mf
+TrueEducationAcademy/build
+TrueEducationAcademy/nbproject
+TrueEducationAcademy/build.xml
+TrueEducationAcademy/manifest.mf
 /TrueEducationAcademy/nbproject/private/
 /TrueEducationAcademy/build/
