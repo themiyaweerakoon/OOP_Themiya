@@ -25,6 +25,7 @@ public class lecturerMainUI extends javax.swing.JFrame {
         btnDelete = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setResizable(false);
 
         jPanel2.setBackground(new java.awt.Color(102, 0, 0));
 
@@ -80,22 +81,18 @@ public class lecturerMainUI extends javax.swing.JFrame {
 
         btnView.setBackground(new java.awt.Color(0, 153, 153));
         btnView.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
-        btnView.setForeground(new java.awt.Color(0, 0, 0));
         btnView.setText("View Lecturers");
 
         btnAdd.setBackground(new java.awt.Color(0, 153, 153));
         btnAdd.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
-        btnAdd.setForeground(new java.awt.Color(0, 0, 0));
         btnAdd.setText("Add Lecturers");
 
         btnUpdate.setBackground(new java.awt.Color(0, 153, 153));
         btnUpdate.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
-        btnUpdate.setForeground(new java.awt.Color(0, 0, 0));
         btnUpdate.setText("Update Lecturers");
 
         btnDelete.setBackground(new java.awt.Color(0, 153, 153));
         btnDelete.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
-        btnDelete.setForeground(new java.awt.Color(0, 0, 0));
         btnDelete.setText("Delete Lecturers");
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);

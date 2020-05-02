@@ -26,6 +26,7 @@ public class viewStudentUI extends javax.swing.JFrame {
         txtareaViewStudent = new javax.swing.JTextArea();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setResizable(false);
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 153));
 
@@ -91,10 +92,8 @@ public class viewStudentUI extends javax.swing.JFrame {
         });
 
         txtareaViewStudent.setEditable(false);
-        txtareaViewStudent.setBackground(new java.awt.Color(255, 255, 255));
         txtareaViewStudent.setColumns(20);
         txtareaViewStudent.setFont(new java.awt.Font("DialogInput", 1, 24)); // NOI18N
-        txtareaViewStudent.setForeground(new java.awt.Color(255, 255, 255));
         txtareaViewStudent.setRows(5);
         jScrollPane1.setViewportView(txtareaViewStudent);
 

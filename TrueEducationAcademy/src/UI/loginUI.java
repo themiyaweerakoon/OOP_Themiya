@@ -28,6 +28,7 @@ public class loginUI extends javax.swing.JFrame {
         PasswordField = new javax.swing.JPasswordField();
         btnreset = new javax.swing.JButton();
         btnexit = new javax.swing.JButton();
+        btnback = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setResizable(false);
@@ -37,7 +38,6 @@ public class loginUI extends javax.swing.JFrame {
 
         lbllogin.setBackground(new java.awt.Color(255, 255, 255));
         lbllogin.setFont(new java.awt.Font("Dialog", 1, 48)); // NOI18N
-        lbllogin.setForeground(new java.awt.Color(0, 0, 0));
         lbllogin.setText("LOGIN");
 
         lblprogram.setFont(new java.awt.Font("Franklin Gothic Demi Cond", 1, 36)); // NOI18N
@@ -55,14 +55,11 @@ public class loginUI extends javax.swing.JFrame {
 
         txtuname.setBackground(new java.awt.Color(255, 255, 102));
         txtuname.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
-        txtuname.setForeground(new java.awt.Color(0, 0, 0));
 
         lbluname.setFont(new java.awt.Font("Felix Titling", 1, 18)); // NOI18N
-        lbluname.setForeground(new java.awt.Color(0, 0, 0));
         lbluname.setText("Username");
 
         lblpassword.setFont(new java.awt.Font("Felix Titling", 1, 18)); // NOI18N
-        lblpassword.setForeground(new java.awt.Color(0, 0, 0));
         lblpassword.setText("Password");
 
         btnlogin.setBackground(new java.awt.Color(0, 0, 0));
@@ -96,6 +93,16 @@ public class loginUI extends javax.swing.JFrame {
             }
         });
 
+        btnback.setBackground(new java.awt.Color(0, 0, 0));
+        btnback.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
+        btnback.setForeground(new java.awt.Color(255, 255, 255));
+        btnback.setText("Back");
+        btnback.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnbackActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
@@ -116,7 +123,9 @@ public class loginUI extends javax.swing.JFrame {
                             .addComponent(btnlogin, javax.swing.GroupLayout.PREFERRED_SIZE, 124, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addContainerGap(81, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
+                .addGap(38, 38, 38)
+                .addComponent(btnback, javax.swing.GroupLayout.PREFERRED_SIZE, 126, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(btnexit, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(31, 31, 31))
         );
@@ -136,8 +145,10 @@ public class loginUI extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addComponent(btnreset, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(btnexit, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(25, 25, 25))
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(btnexit, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnback, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(24, 24, 24))
         );
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
@@ -218,6 +229,12 @@ public class loginUI extends javax.swing.JFrame {
         System.exit(0);
     }//GEN-LAST:event_btnexitActionPerformed
 
+    private void btnbackActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnbackActionPerformed
+
+        dispose();
+        new categoriesUI().setVisible(true);
+    }//GEN-LAST:event_btnbackActionPerformed
+
 
     public static void main(String args[]) {
 
@@ -247,6 +264,7 @@ public class loginUI extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPasswordField PasswordField;
+    private javax.swing.JButton btnback;
     private javax.swing.JButton btnexit;
     private javax.swing.JButton btnlogin;
     private javax.swing.JButton btnreset;

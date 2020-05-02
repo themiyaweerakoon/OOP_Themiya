@@ -47,6 +47,7 @@ public class addStudentUI extends javax.swing.JFrame {
         jTextField2.setText("jTextField2");
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setResizable(false);
 
         jPanel1.setBackground(new java.awt.Color(102, 102, 102));
 
@@ -129,33 +130,20 @@ public class addStudentUI extends javax.swing.JFrame {
         lblStudentContact.setForeground(new java.awt.Color(255, 255, 255));
         lblStudentContact.setText("Contact Number");
 
-        txtStudentID.setBackground(new java.awt.Color(255, 255, 255));
         txtStudentID.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
-        txtStudentID.setForeground(new java.awt.Color(0, 0, 0));
 
-        txtStudentEmail.setBackground(new java.awt.Color(255, 255, 255));
         txtStudentEmail.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
-        txtStudentEmail.setForeground(new java.awt.Color(0, 0, 0));
 
-        txtStudentName.setBackground(new java.awt.Color(255, 255, 255));
         txtStudentName.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
-        txtStudentName.setForeground(new java.awt.Color(0, 0, 0));
 
-        txtStudentContact.setBackground(new java.awt.Color(255, 255, 255));
         txtStudentContact.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
-        txtStudentContact.setForeground(new java.awt.Color(0, 0, 0));
 
         DateChooserStudentDOB.setBackground(new java.awt.Color(255, 255, 255));
-        DateChooserStudentDOB.setForeground(new java.awt.Color(0, 0, 0));
         DateChooserStudentDOB.setDateFormatString("dd-mm- yyyy"); // NOI18N
 
-        txtStudentAddress.setBackground(new java.awt.Color(255, 255, 255));
         txtStudentAddress.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
-        txtStudentAddress.setForeground(new java.awt.Color(0, 0, 0));
 
-        ComboBoxStudentGender.setBackground(new java.awt.Color(255, 255, 255));
         ComboBoxStudentGender.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
-        ComboBoxStudentGender.setForeground(new java.awt.Color(0, 0, 0));
         ComboBoxStudentGender.setMaximumRowCount(3);
         ComboBoxStudentGender.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Select Gender...", "Male", "Female" }));
         ComboBoxStudentGender.setToolTipText("");
@@ -164,7 +152,6 @@ public class addStudentUI extends javax.swing.JFrame {
 
         btnAdd.setBackground(new java.awt.Color(0, 153, 153));
         btnAdd.setFont(new java.awt.Font("Ebrima", 1, 24)); // NOI18N
-        btnAdd.setForeground(new java.awt.Color(0, 0, 0));
         btnAdd.setText("ADD");
         btnAdd.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {

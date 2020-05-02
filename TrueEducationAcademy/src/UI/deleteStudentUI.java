@@ -26,6 +26,7 @@ public class deleteStudentUI extends javax.swing.JFrame {
         btnReset = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setResizable(false);
 
         jPanel1.setBackground(new java.awt.Color(153, 0, 0));
 
@@ -80,9 +81,7 @@ public class deleteStudentUI extends javax.swing.JFrame {
                 .addGap(38, 38, 38))
         );
 
-        txtDeleteStudentID.setBackground(new java.awt.Color(255, 255, 255));
         txtDeleteStudentID.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
-        txtDeleteStudentID.setForeground(new java.awt.Color(0, 0, 0));
 
         btnStudentDelete.setBackground(new java.awt.Color(255, 255, 51));
         btnStudentDelete.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N

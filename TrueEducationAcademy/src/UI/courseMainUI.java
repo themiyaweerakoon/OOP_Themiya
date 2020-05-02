@@ -24,6 +24,7 @@ public class courseMainUI extends javax.swing.JFrame {
         btnUpdate = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setResizable(false);
 
         jPanel1.setBackground(new java.awt.Color(0, 0, 153));
 
@@ -79,22 +80,23 @@ public class courseMainUI extends javax.swing.JFrame {
 
         btnView.setBackground(new java.awt.Color(255, 255, 0));
         btnView.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
-        btnView.setForeground(new java.awt.Color(0, 0, 0));
         btnView.setText("View Courses");
+        btnView.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnViewActionPerformed(evt);
+            }
+        });
 
         btnAdd.setBackground(new java.awt.Color(255, 255, 51));
         btnAdd.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
-        btnAdd.setForeground(new java.awt.Color(0, 0, 0));
         btnAdd.setText("Add Courses");
 
         btnDelete.setBackground(new java.awt.Color(255, 255, 0));
         btnDelete.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
-        btnDelete.setForeground(new java.awt.Color(0, 0, 0));
         btnDelete.setText("Delete Courses");
 
         btnUpdate.setBackground(new java.awt.Color(255, 255, 0));
         btnUpdate.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
-        btnUpdate.setForeground(new java.awt.Color(0, 0, 0));
         btnUpdate.setText("Update Courses");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
@@ -147,6 +149,10 @@ public class courseMainUI extends javax.swing.JFrame {
         dispose();
         new mainMenuUI().setVisible(true);
     }//GEN-LAST:event_btnbackActionPerformed
+
+    private void btnViewActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnViewActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnViewActionPerformed
 
 
     public static void main(String args[]) {
