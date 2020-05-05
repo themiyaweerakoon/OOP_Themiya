@@ -4,9 +4,43 @@ package Service;
 import DB.Database;
 import Models.Student;
 import Models.Lecturer;
+import Models.underStudent;
 
 
 public class TrueEducationService {
+    
+    ///////////
+    public void underAddStudent(underStudent understudent){
+    Database db =new Database();
+    db.underaAddStudent(understudent);
+    
+    }
+    
+    public void underdeleteStudent(underStudent understudent)
+{
+    Database db = new Database();
+    db.underdeleteStudent(understudent);
+}
+    
+    
+    
+    public void underupdateStudent(underStudent understudent)
+{
+    Database db = new Database();
+    db.UnderupdateStudent(understudent);
+}
+    
+    
+    public void UnderviewStudent(underStudent understudent)
+{
+    Database db = new Database();
+    db.underviewStudent(understudent);
+}
+
+    
+    
+    
+    /////////
     
 public void addStudent(Student student)
 {
