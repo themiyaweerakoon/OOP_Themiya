@@ -94,11 +94,6 @@ public class courseMainUI extends javax.swing.JFrame {
         btnDelete.setBackground(new java.awt.Color(255, 255, 0));
         btnDelete.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
         btnDelete.setText("Delete Courses");
-        btnDelete.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnDeleteActionPerformed(evt);
-            }
-        });
 
         btnUpdate.setBackground(new java.awt.Color(255, 255, 0));
         btnUpdate.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
@@ -158,10 +153,6 @@ public class courseMainUI extends javax.swing.JFrame {
     private void btnViewActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnViewActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_btnViewActionPerformed
-
-    private void btnDeleteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDeleteActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnDeleteActionPerformed
 
 
     public static void main(String args[]) {
