@@ -4,8 +4,6 @@ package Service;
 import DB.Database;
 import Models.Student;
 import Models.Lecturer;
-import Models.PostGraduateStudent;
-
 
 
 public class TrueEducationService {
@@ -58,31 +56,5 @@ public void updateLecturer(Lecturer lecturer)
     DB.updateLecturer(lecturer);
 
 }
-
-public void postaddStudent(PostGraduateStudent poststudent)
-{
-    Database DB = new Database();
-    DB.postaddStudent(poststudent);
-}
-
-public void postdeleteStudent(PostGraduateStudent poststudent)
-{
-    Database DB = new Database();
-    DB.postdeleteStudent(poststudent);
-}
-
-public void postviewStudent(PostGraduateStudent poststudent)
-{
-    Database DB = new Database();
-    DB.postviewStudent(poststudent);
-}
-
-public void postupdateStudent(PostGraduateStudent poststudent)
-{
-    Database DB = new Database();
-    DB.postupdateStudent(poststudent);
-}
-
-
 
 }
