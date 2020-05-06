@@ -109,6 +109,11 @@ public class lecturerMainUI extends javax.swing.JFrame {
         btnDelete.setBackground(new java.awt.Color(0, 153, 153));
         btnDelete.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
         btnDelete.setText("Delete Lecturers");
+        btnDelete.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnDeleteActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -192,6 +197,13 @@ public class lecturerMainUI extends javax.swing.JFrame {
         new updateLecturerUI().setVisible(true);
         
     }//GEN-LAST:event_btnUpdateActionPerformed
+
+    private void btnDeleteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDeleteActionPerformed
+        
+       dispose();
+       new deleteLecturerUI().setVisible(true); 
+        
+    }//GEN-LAST:event_btnDeleteActionPerformed
 
 
     public static void main(String args[]) {
