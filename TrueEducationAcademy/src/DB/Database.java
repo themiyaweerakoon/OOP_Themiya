@@ -3,7 +3,7 @@ package DB;
 
 import Models.Student;
 import Models.Lecturer;
-
+import Models.Student_Enroll;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
@@ -473,6 +473,84 @@ public void updateLecturer(Lecturer lecturer)
       System.out.println("Check it in the MySQL Table..........");
    }
 
+public void Student_enroll(Student_Enroll Stu)
+{
+    String name = Stu.getname();
+    String contactNo = Stu.getcontactNo();
+    String email = Stu.getemail();
+    String address =Stu.getaddress();
+    String nic =(String) Stu.getnic();
+    String stream = Stu.getstream();
+    String status = Stu.getstatus();
+    String type = Stu.gettype();
+    String country = Stu.getcountry();
+    String province = Stu.getprovince();
+    String district  = Stu.getdistrict ();
+    String campus = Stu.getcampus();
+    String batch = Stu.getbatch();
+    String empStatus = Stu.getempStatus();
+    
+    Connection conn = null;
+
+      try {
+         try {
+            Class.forName("com.mysql.jdbc.Driver");
+         } catch (ClassNotFoundException ex) {
+            System.out.println(ex);
+      }
+      conn = DriverManager.getConnection("jdbc:mysql://localhost/student_enroll","root","");
+      
+      System.out.println("Connection is created successfully:");
+      
+      query = "INSERT INTO `student_enroll`(`name`, `contactNo`, `email`, `address`, `nic`, `stream`, `status`, `type`, `country`, `province`, `district`, `campus`, `batch`, `empStatus`) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
+      
+      PreparedStatement statmt = conn.prepareStatement(query);
+      
+      statmt.setString(1, name);
+      statmt.setString(2, contactNo);
+      statmt.setString(3,email);
+      statmt.setString(4, address);
+      statmt.setString(5, nic);
+      statmt.setString(6, stream);
+      statmt.setString(7, status);
+      statmt.setString(3,type);
+      statmt.setString(4, country);
+      statmt.setString(5, province);
+      statmt.setString(6, district);
+      statmt.setString(7, campus);
+      statmt.setString(5, batch);
+      statmt.setString(6, empStatus);
+      
+    statmt.execute();
+      
+      System.out.println("Record is inserted in the table successfully..................");
+      
+      } catch (SQLException excep) {
+         excep.printStackTrace();
+         
+      } catch (Exception excep) {
+         excep.printStackTrace();
+         
+      } finally {
+          
+         try {
+            if (stmt != null)
+               conn.close();
+            
+         } catch (SQLException se) {}
+         
+         try {
+               if (conn != null)
+               conn.close();
+               
+         } catch (SQLException se) {
+            se.printStackTrace();
+         }  
+      }
+      System.out.println("Check it in the MySQL Table..........");
+   }
 }
+
+
 
 
