@@ -38,7 +38,6 @@ public class addStudentUI extends javax.swing.JFrame {
         txtStudentEmail = new javax.swing.JTextField();
         txtStudentName = new javax.swing.JTextField();
         txtStudentContact = new javax.swing.JTextField();
-        DateChooserStudentDOB = new com.toedter.calendar.JDateChooser();
         txtStudentAddress = new javax.swing.JTextField();
         ComboBoxStudentGender = new javax.swing.JComboBox<>();
         btnAdd = new javax.swing.JButton();
@@ -138,9 +137,6 @@ public class addStudentUI extends javax.swing.JFrame {
 
         txtStudentContact.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
 
-        DateChooserStudentDOB.setBackground(new java.awt.Color(255, 255, 255));
-        DateChooserStudentDOB.setDateFormatString("dd-mm- yyyy"); // NOI18N
-
         txtStudentAddress.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
 
         ComboBoxStudentGender.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
@@ -207,8 +203,7 @@ public class addStudentUI extends javax.swing.JFrame {
                                 .addGap(0, 0, Short.MAX_VALUE)))
                         .addGap(38, 38, 38))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                        .addComponent(DateChooserStudentDOB, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addGap(282, 282, 282)
+                        .addGap(0, 0, Short.MAX_VALUE)
                         .addComponent(btnAdd, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(68, 68, 68)
                         .addComponent(btnReset)
@@ -250,11 +245,9 @@ public class addStudentUI extends javax.swing.JFrame {
                 .addGap(37, 37, 37)
                 .addComponent(lblStudentDOB)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(btnAdd)
-                        .addComponent(btnReset))
-                    .addComponent(DateChooserStudentDOB, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(btnAdd)
+                    .addComponent(btnReset))
                 .addContainerGap(101, Short.MAX_VALUE))
         );
 
@@ -347,7 +340,6 @@ public class addStudentUI extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JComboBox<String> ComboBoxStudentGender;
-    private com.toedter.calendar.JDateChooser DateChooserStudentDOB;
     private javax.swing.JButton btnAdd;
     private javax.swing.JButton btnReset;
     private javax.swing.JButton btnback;
