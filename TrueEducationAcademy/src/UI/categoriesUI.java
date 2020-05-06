@@ -116,6 +116,11 @@ public class categoriesUI extends javax.swing.JFrame {
         jButton4.setBackground(new java.awt.Color(102, 255, 255));
         jButton4.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
         jButton4.setText("Manage Undergraduate Degree Program");
+        jButton4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton4ActionPerformed(evt);
+            }
+        });
 
         jButton5.setBackground(new java.awt.Color(102, 255, 255));
         jButton5.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
@@ -205,6 +210,13 @@ public class categoriesUI extends javax.swing.JFrame {
         new loginUI().setVisible(true);
         
     }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+        // TODO add your handling code here:
+        
+        dispose();
+        new underLogin().setVisible(true);
+    }//GEN-LAST:event_jButton4ActionPerformed
 
     /**
      * @param args the command line arguments
