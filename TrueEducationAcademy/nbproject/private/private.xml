@@ -3,20 +3,28 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
+            <file>file:/D:/GitHub/OOP_Themiya/TrueEducationAcademy/src/UI/viewLecturerUI.java</file>
             <file>file:/D:/GitHub/OOP_Themiya/TrueEducationAcademy/src/UI/loginUI.java</file>
+            <file>file:/D:/GitHub/OOP_Themiya/TrueEducationAcademy/src/UI/deleteLecturerUI.java</file>
             <file>file:/D:/GitHub/OOP_Themiya/TrueEducationAcademy/src/UI/deleteStudentUI.java</file>
+            <file>file:/D:/GitHub/OOP_Themiya/TrueEducationAcademy/src/Models/Course.java</file>
             <file>file:/D:/GitHub/OOP_Themiya/TrueEducationAcademy/src/UI/viewStudentUI.java</file>
             <file>file:/D:/GitHub/OOP_Themiya/TrueEducationAcademy/src/UI/categoriesUI.java</file>
             <file>file:/D:/GitHub/OOP_Themiya/TrueEducationAcademy/src/UI/lecturerMainUI.java</file>
             <file>file:/D:/GitHub/OOP_Themiya/TrueEducationAcademy/src/UI/moduleMainUI.java</file>
             <file>file:/D:/GitHub/OOP_Themiya/TrueEducationAcademy/src/UI/addStudentUI.java</file>
             <file>file:/D:/GitHub/OOP_Themiya/TrueEducationAcademy/src/DB/Database.java</file>
+            <file>file:/D:/GitHub/OOP_Themiya/TrueEducationAcademy/src/UI/updateStudentUI.java</file>
             <file>file:/D:/GitHub/OOP_Themiya/TrueEducationAcademy/src/UI/courseMainUI.java</file>
+            <file>file:/D:/GitHub/OOP_Themiya/TrueEducationAcademy/src/UI/addLectuerUI.java</file>
+            <file>file:/D:/GitHub/OOP_Themiya/TrueEducationAcademy/src/Models/Module.java</file>
             <file>file:/D:/GitHub/OOP_Themiya/TrueEducationAcademy/src/Service/TrueEducationService.java</file>
             <file>file:/D:/GitHub/OOP_Themiya/TrueEducationAcademy/src/UI/mainMenuUI.java</file>
             <file>file:/D:/GitHub/OOP_Themiya/TrueEducationAcademy/src/UI/HomeUI.java</file>
+            <file>file:/D:/GitHub/OOP_Themiya/TrueEducationAcademy/src/Models/Lecturer.java</file>
             <file>file:/D:/GitHub/OOP_Themiya/TrueEducationAcademy/src/UI/studentMainUI.java</file>
             <file>file:/D:/GitHub/OOP_Themiya/TrueEducationAcademy/src/Models/Student.java</file>
+            <file>file:/D:/GitHub/OOP_Themiya/TrueEducationAcademy/src/UI/updateLecturerUI.java</file>
         </group>
     </open-files>
 </project-private>

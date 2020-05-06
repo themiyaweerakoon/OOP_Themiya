@@ -82,6 +82,11 @@ public class deleteStudentUI extends javax.swing.JFrame {
         );
 
         txtDeleteStudentID.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
+        txtDeleteStudentID.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtDeleteStudentIDActionPerformed(evt);
+            }
+        });
 
         btnStudentDelete.setBackground(new java.awt.Color(255, 255, 51));
         btnStudentDelete.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
@@ -166,6 +171,10 @@ public class deleteStudentUI extends javax.swing.JFrame {
 
         clearFields();
     }//GEN-LAST:event_btnResetActionPerformed
+
+    private void txtDeleteStudentIDActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtDeleteStudentIDActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtDeleteStudentIDActionPerformed
 
 
     public static void main(String args[]) {

@@ -82,14 +82,29 @@ public class lecturerMainUI extends javax.swing.JFrame {
         btnView.setBackground(new java.awt.Color(0, 153, 153));
         btnView.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
         btnView.setText("View Lecturers");
+        btnView.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnViewActionPerformed(evt);
+            }
+        });
 
         btnAdd.setBackground(new java.awt.Color(0, 153, 153));
         btnAdd.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
         btnAdd.setText("Add Lecturers");
+        btnAdd.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnAddActionPerformed(evt);
+            }
+        });
 
         btnUpdate.setBackground(new java.awt.Color(0, 153, 153));
         btnUpdate.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
         btnUpdate.setText("Update Lecturers");
+        btnUpdate.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnUpdateActionPerformed(evt);
+            }
+        });
 
         btnDelete.setBackground(new java.awt.Color(0, 153, 153));
         btnDelete.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
@@ -156,6 +171,27 @@ public class lecturerMainUI extends javax.swing.JFrame {
         dispose();
         new mainMenuUI().setVisible(true);
     }//GEN-LAST:event_btnbackActionPerformed
+
+    private void btnAddActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAddActionPerformed
+        
+        dispose();
+        new addLectuerUI().setVisible(true);
+        
+    }//GEN-LAST:event_btnAddActionPerformed
+
+    private void btnViewActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnViewActionPerformed
+        
+        dispose();
+        new viewLecturerUI().setVisible(true);
+        
+    }//GEN-LAST:event_btnViewActionPerformed
+
+    private void btnUpdateActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnUpdateActionPerformed
+       
+        dispose();
+        new updateLecturerUI().setVisible(true);
+        
+    }//GEN-LAST:event_btnUpdateActionPerformed
 
 
     public static void main(String args[]) {

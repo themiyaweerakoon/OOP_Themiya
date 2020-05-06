@@ -112,6 +112,11 @@ public class studentMainUI extends javax.swing.JFrame {
         btnUpdate.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
         btnUpdate.setForeground(new java.awt.Color(255, 255, 255));
         btnUpdate.setText("Update Students");
+        btnUpdate.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnUpdateActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -184,6 +189,13 @@ public class studentMainUI extends javax.swing.JFrame {
         new viewStudentUI().setVisible(true);
         
     }//GEN-LAST:event_btnViewActionPerformed
+
+    private void btnUpdateActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnUpdateActionPerformed
+        
+        dispose();
+        new updateStudentUI().setVisible(true);
+        
+    }//GEN-LAST:event_btnUpdateActionPerformed
 
 
     public static void main(String args[]) {
